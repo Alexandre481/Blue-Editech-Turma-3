@@ -1,0 +1,1 @@
+print("exercicios de hoje")
