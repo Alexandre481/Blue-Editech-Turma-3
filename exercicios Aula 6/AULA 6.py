@@ -1,1 +1,0 @@
-print("exercicios de hoje")
