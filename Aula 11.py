@@ -31,3 +31,6 @@ from typing import Type, overload
 ###print(dicionario_vingadores.get(nome,"nome não encontrado"))
 
 
+###Forma COM While
+###While nome not in dicionario_contatos:
+###print("nome não encontrado,tente novamente")
