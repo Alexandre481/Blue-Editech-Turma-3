@@ -1,0 +1,1293 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled2.ipynb",
+      "provenance": [],
+      "collapsed_sections": [],
+      "authorship_tag": "ABX9TyMjDRNlY67jAapjSGaA61aZ",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Alexandre481/Blueturma2/blob/main/Exercicios%20de%20revis%C3%A3o\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "kQUtVA5lzmvx"
+      },
+      "source": [
+        "1) Faça um programa que mostre a mensagem \"Alo mundo\" na tela"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Mk7R6UHMzCL2",
+        "outputId": "846831f3-6702-448c-d8ef-3391b06aeca0"
+      },
+      "source": [
+        "print(\"Alo mundo\")"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Alo mundo\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "PTQ_zDGw0HAj"
+      },
+      "source": [
+        "2) Faça um programa que peça  um numero e então mostre a mensagem o numero informado foi"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 135
+        },
+        "id": "YojHYO3q0ChV",
+        "outputId": "d5a1d1a0-4481-4885-bb56-ef03d896d947"
+      },
+      "source": [
+        "qualéonumero=input(\"Digite um numero:\")\n",
+        "informe=(\"O numero informado foi:\"=(\"qualéonumero\"))\n",
+        "print"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "SyntaxError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;36m  File \u001b[0;32m\"<ipython-input-85-3d5b23a84d13>\"\u001b[0;36m, line \u001b[0;32m2\u001b[0m\n\u001b[0;31m    informe=(\"O numero informado foi:\"=(\"qualéonumero\"))\u001b[0m\n\u001b[0m                                      ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid syntax\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "Eao6uMaCjh9q"
+      },
+      "source": [
+        "3) Faça um programa que peça dois números e imprima a soma."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "jtK2bogxjwFW",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "81912994-d666-45ab-88d6-806e6f6724fb"
+      },
+      "source": [
+        "A=input(\"Total de funcionários da empresa Statoil:\")\n",
+        "B=input(\"Total de funcionários da empresa Chevron:\")\n",
+        "\n",
+        "A=int(a)\n",
+        "B=int(b)\n",
+        "\n",
+        "\n",
+        "print(\"A soma do numero total de funcionários após a fusão:\",soma)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Total de funcionários da empresa Statoil:2750\n",
+            "Total de funcionários da empresa Chevron:1862\n",
+            "A soma do numero total de funcionários após a fusão: 5200\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "y2XR3sTtW7W5"
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "0XIj9wh2FvCv"
+      },
+      "source": [
+        "4) Faça um programa que peça as 4 notas bismetrais e mostre a média."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "BVOJ1mVGFtJD",
+        "outputId": "dec0c53e-96ef-40d4-88a4-d8832c12dcb2"
+      },
+      "source": [
+        "prova1=float(input(\"Nota 1º Bimestre:\"))\n",
+        "prova2=float(input(\"Nota 2º Bimestre:\"))\n",
+        "prova3=float(input(\"Nota 3º Bimestre:\"))\n",
+        "prova4=float(input(\"Nota 4º Bimestre:\"))\n",
+        "media=(prova1+prova2+prova3+prova4)/4\n",
+        "print (media)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Nota 1º Bimestre:5.75\n",
+            "Nota 2º Bimestre:6.25\n",
+            "Nota 3º Bimestre:9\n",
+            "Nota 4º Bimestre:7\n",
+            "7.0\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "vK3qLYE2cfKN"
+      },
+      "source": [
+        "5) Faça um programa que converta metros em centimetros.\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "xF2IlbpjiwZY",
+        "outputId": "81fbb442-ed47-47a5-cd69-9f237fda9667"
+      },
+      "source": [
+        "Metros=float(input(\"Quantidade em Metros=\"))\n",
+        "\n",
+        "print(\"Conversão em Centimetros=\",Metros*100)\n"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Quantidade em Metros=2\n",
+            "Conversão em Centimetros= 200.0\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "hnOCsP_ONC0F"
+      },
+      "source": [
+        "6) Faça um programa que peça um raio de um circulo ,calcule e mostre a sua área."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "6EOAKzKqNBHV",
+        "outputId": "e1b38d0f-8393-4c48-8c55-451f79c2ebfe"
+      },
+      "source": [
+        "pi=3.14\n",
+        "raio = float(input('Informe o valor do raio do círculo em m2: '))\n",
+        "\n",
+        "area = pi * (raio ** 2)\n",
+        "print('A área do circulo é de :',area,'m2')\n"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Informe o valor do raio do círculo em m2: 12\n",
+            "A área do circulo é de : 452.16 m2\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "r0QPRy_TjFBD"
+      },
+      "source": [
+        "7) Faça um programa que calcule a área de um quadrado ,em seguida mostre o dobro desta área para o usuário."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "491gtujojXb4",
+        "outputId": "6f706473-425a-4196-ac4a-8c77d0938b11"
+      },
+      "source": [
+        "altura=float(input(\"Digite a altura do quadrado em metros\"))\n",
+        "largura=float(input(\"Digite a largura do quadrado em metros\"))\n",
+        "a =(altura * largura)\n",
+        "print (\"O dobro da area é \",a * 2,\"m²\") "
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Digite a altura do quadrado em metros15\n",
+            "Digite a largura do quadrado em metros12.5\n",
+            "O dobro da area é  375.0 m²\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "RSXDyqTix9sS"
+      },
+      "source": [
+        "8) Faça um programa que pergunte quanto você ganha por hora e o numero de horas trabalhadas no mês.Calcule e mostre o total do seu salário no referido mês."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "QHfcveM-yHvE",
+        "outputId": "6b72757e-61fb-4296-dc68-cec464c13dda"
+      },
+      "source": [
+        "GH =float(input(\"Quanto você ganha por hora: \"))\n",
+        "HTM=float(input(\"Quantas horas você trabalhou no mês: \"))\n",
+        "\n",
+        "Salariodomes=(qH * hT)\n",
+        "\n",
+        "\n",
+        "print('Seu salário no mês é',Salariodomes)\n"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Quanto você ganha por hora: 8\n",
+            "Quantas horas você trabalhou no mês: 160\n",
+            "Seu salário no mês é 1360.0\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "SGlsmiXdi5wY"
+      },
+      "source": [
+        "9) Faça um programa que peça a temperatura em grau Fahrenheit,tranforme e mostre a temperatura em graus Celsius c=5*((F-32)/9)\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Kg4r__afxNru",
+        "outputId": "966ccd88-baad-48e7-f47e-cc9ef8552dcc"
+      },
+      "source": [
+        "FAH = float(input('Entre com a temperatura em graus Fahrenheit: '))\n",
+        "C = (F - 32) * (5 / 9)\n",
+        "\n",
+        "print('Valor em Graus Celsius: {0}°C'.format(C))\n"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Entre com a temperatura em graus Fahrenheit: 50\n",
+            "Valor em Graus Celsius: 10.0°C\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "6M2FW1TeJwf-"
+      },
+      "source": [
+        "10) Faça um programa que peça a temperatura em graus  Celsius,transforme e mostre em graus Fahrenheit."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "DT9hU30pKJjm",
+        "outputId": "f5d0f94c-7164-4a85-977e-b24a84d9678f"
+      },
+      "source": [
+        " C = float(input('Entre com a temperatura em graus Celsius: '))\n",
+        " F = C * (9 / 5) + 32\n",
+        "print('Valor em Fahrenheit: {}°F'.format(F))\n"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Entre com a temperatura em graus Celsius: 25\n",
+            "Valor em Fahrenheit: 77.0°F\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "4zYHtw3PXNXz"
+      },
+      "source": [
+        "11) Faça um programa que peça 2 numeros inteiros e um  numero real.Calcule e mostre:\n",
+        "a. O produto do dobro  do primeiro com metade do segundo.\n",
+        "b. A soma do triplo do primeiro com o terceiro.\n",
+        "c. O terceiro elevado ao cubo.\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "uehGwTgiXy3a",
+        "outputId": "2cc8a99f-138a-4916-c217-cabff1f9f5e3"
+      },
+      "source": [
+        "\n",
+        "n1 = int(input(\"1o Número inteiro: \"))\n",
+        "n2 = int(input(\"2o Número inteiro: \"))\n",
+        "n3 = float(input('Número real: '))\n",
+        "\n",
+        "print ('Produto:', ((2*n1) * (n2/2)))\n",
+        "print ('Soma:', (3 * n1) + n3)\n",
+        "print ('Cubo:', n3**3)\n"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "1o Número inteiro: 6\n",
+            "2o Número inteiro: 4\n",
+            "Número real: 2.2\n",
+            "Produto: 24.0\n",
+            "Soma: 20.2\n",
+            "Cubo: 10.648000000000003\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "jp5ZhKrDod-l"
+      },
+      "source": [
+        "12) Tendo como dados de entrada a altura  de uma pessoa ,construa um algoritimo que calcule seu peso ideal ,usando a seguinte formula:(72.7*altura)-58. "
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "F9ZBL5DEtwuz",
+        "outputId": "bc2a61bd-d677-451c-be80-af5694bb7bd9"
+      },
+      "source": [
+        "A=float(input(\"Digite sua altura:\"))\n",
+        "print(\"Peso Ideal:\",float(72.7*A)-58,\"\")\n"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Digite sua altura:1.80\n",
+            "Peso Ideal: 72.86000000000001 \n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "ifXvUaQz8oNx"
+      },
+      "source": [
+        "13) Tendo como dado de entrada a altura(h) de uma pessoa,construa uma algoritimo que calcule seu peso ideal,utilizando as seguintes fórmulas:\n",
+        "A. Para Homens:(72.7*h)-58\n",
+        "B. Para Mulheres (61.1*h)-44.7 "
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "Y8jPHUZwI3i_"
+      },
+      "source": [
+        "sexo:input(\"Digite seu sexo: (H) para Homem (M) para Mulher\")\n",
+        "if sexo = H:\n",
+        "  aH = input(\"Digite sua altura: \")\n",
+        "  vH = 72.7 * aH\n",
+        "  rH = vH - 58\n",
+        "  print (\"Seu peso ideal é ',rH,'quilos\")\n",
+        "elif sexo == M:\n",
+        "  aM = input(\"Digite sua altura: \")\n",
+        "  vM = 62.1 * aM\n",
+        "  rM = vM - 44.7\n",
+        "print(\"Seu peso ideal é \"),rM,(\"quilos\")"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "_KYZ9PDRQpAf"
+      },
+      "source": [
+        "14) JOÃO papo de pescador,homem de bem,comprou um microcomputador para controlar o rendimento diário do seu trabalho.Toda vez que ele traz um peso de peixe maior que o estabelecido pelo regulamento de pesca do Estado de São Paulo (50 quilos) deve pagar uma multa de R$ 4,00 por quilo excedente.João precisa que faça um programa que leia variável peso(peso de peixes) e calcule o excesso. Gravar na variável excesso a quantidade de quilos além do limite e na variável multa o valor da multa que João deverá pagar.imprima os dados do programa comas mensagens adequadas."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 264
+        },
+        "id": "0A5jgUTbR8Cw",
+        "outputId": "71bb2b0f-faed-448b-d5ff-6f34b22b2c1e"
+      },
+      "source": [
+        "\n",
+        "peso=float(input(\"Digite a quantidade de kgs de peixe que João trouxe: \"))\n",
+        "\n",
+        "\n",
+        "if peso > pesoLimite:\n",
+        "    excesso = peso - pesoLimite\n",
+        "    multa = excesso * 4.00\n",
+        "    print (\"Multa foi de \" + str(multa) + \" reais\")"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Digite a quantidade de kgs de peixe que João trouxe: 40\n"
+          ],
+          "name": "stdout"
+        },
+        {
+          "output_type": "error",
+          "ename": "NameError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-2-e26f51efcc86>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      3\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      4\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 5\u001b[0;31m \u001b[0;32mif\u001b[0m \u001b[0mpeso\u001b[0m \u001b[0;34m>\u001b[0m \u001b[0mpesoLimite\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      6\u001b[0m     \u001b[0mexcesso\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mpeso\u001b[0m \u001b[0;34m-\u001b[0m \u001b[0mpesoLimite\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      7\u001b[0m     \u001b[0mmulta\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mexcesso\u001b[0m \u001b[0;34m*\u001b[0m \u001b[0;36m4.00\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mNameError\u001b[0m: name 'pesoLimite' is not defined"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "zEhsoVoB_a2w",
+        "outputId": "ac592ed9-1ef7-40f9-ec11-19b894bdfa34"
+      },
+      "source": [
+        "def pn(n):\n",
+        "    if n > 0:\n",
+        "        print('Positivo')\n",
+        "    elif n == 0:\n",
+        "        print('Nulo')\n",
+        "    else:\n",
+        "        print('Negativo')\n",
+        "\n",
+        "print('POSITIVO OU NEGATIVO')\n",
+        "n = int(input('digite um número: '))\n",
+        "print('Este número é', end=' ')\n",
+        "pn(n)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "POSITIVO OU NEGATIVO\n",
+            "digite um número: 10\n",
+            "Este número é Positivo\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "tXjJB8-aHVrO",
+        "outputId": "f1a1e2be-475c-4562-ece3-3151e9665348"
+      },
+      "source": [
+        "def imprime_menor(a, b):\n",
+        "    if a < b:\n",
+        "      print(a)\n",
+        "    elif a > b:\n",
+        "      print(b)\n",
+        "   \n",
+        "    else:\n",
+        "      print(\"São valores identicos.\")\n",
+        "\n",
+        "imprime_menor(50,50)\n",
+        "imprime_menor(50,12)\n"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "São valores identicos.\n",
+            "12\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "h-YC3fA4WC-Y",
+        "outputId": "e60c03aa-4511-43cf-b3b7-bbf481af12a2"
+      },
+      "source": [
+        "maiusculas = \"quero todas em maiúsculas\".upper()\n",
+        "print(maiusculas)\n",
+        "\n"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "QUERO TODAS EM MAIÚSCULAS\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "dFh_faAsW94k",
+        "outputId": "d0d5464d-cd42-4ae4-e7d5-ee13e5e17947"
+      },
+      "source": [
+        "transformar=\"amazonia\".upper()   \n",
+        "print(transformar)\n"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "AMAZONIA\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "EiCM34W87uIt"
+      },
+      "source": [
+        "def conta_vogal(frase):\n",
+        "        vogais=0\n",
+        "        for letra in frase:\n",
+        "            if letra.upper() in \"AEIOU\":\n",
+        "                vogais += 1\n",
+        "             \n",
+        "        print (\"vogais\")\n"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "jJL6ew7seUE-"
+      },
+      "source": [
+        "Sintaxe do comando print"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "up6dgMgMW-pt",
+        "outputId": "03e6316f-f1a7-428a-8385-ed1fafd39416"
+      },
+      "source": [
+        "print(9+9),\n",
+        "print (\"deu certo?\")\n",
+        "\n",
+        "\n",
+        "\n"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "18\n",
+            "deu certo?\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "1Unlv2vQecHR"
+      },
+      "source": [
+        "Criando uma variável."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "GRpqlSjaeZMj",
+        "outputId": "089a904b-f57f-492b-ff9d-6d969d8e97e9"
+      },
+      "source": [
+        "varString=\"Isto é uma string\"\n",
+        "varInt=20\n",
+        "varFloat=38.87\n",
+        "print (varString)\n",
+        "print (varInt)\n",
+        "print(varFloat)\n"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Isto é uma string\n",
+            "20\n"
+          ],
+          "name": "stdout"
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "float"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 36
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "TbrMWCfLjTjp"
+      },
+      "source": [
+        "Observe a diferença ente executar um comando comando e parenteses\n",
+        " E acima criando uma variavel,não necessita de paresentes."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "A-kvXSdShrz8",
+        "outputId": "9d57c38c-e0cc-4724-ec73-acc8e15f8bbd"
+      },
+      "source": [
+        "\n",
+        "print(type(varInt))\n",
+        "print(type(varFloat))\n",
+        "print (type(varString))\n"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "<class 'int'>\n",
+            "<class 'float'>\n",
+            "<class 'str'>\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "OXWnSCQ1kLWz"
+      },
+      "source": [
+        "Concatenar Strings"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "3tqFL6gVkPHg",
+        "outputId": "b792953a-b2cb-428a-d3f2-dccc91b71082"
+      },
+      "source": [
+        "texto1=\"Isto é um texto\"\n",
+        "texto2=\"Isso também\"\n",
+        "print(texto1,texto2)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Isto é um texto Isso também\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "nNxK0G5jvm1a"
+      },
+      "source": [
+        "Operações"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "yxCuevUuvoY_",
+        "outputId": "f2b7b763-01ff-4d9b-d805-1b84dbdbcf63"
+      },
+      "source": [
+        "print (9+5)\n",
+        "print(9-5)\n",
+        "print (9*5)\n",
+        "print(10/5)\n",
+        "print(10//5)\n",
+        "print(2%2) ###% é saldo restante da divisão= resto##\n",
+        "print(180*0.8)####0.8 equivale a 80 % transformando em numero decimal###\n",
+        "print (180-(180*0.8))### total menos a porcentagem\n",
+        "print (10**3)### Exponenciação###"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "14\n",
+            "4\n",
+            "45\n",
+            "2.0\n",
+            "2\n",
+            "0\n",
+            "144.0\n",
+            "36.0\n",
+            "1000\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "A3hkNNNq0UjV"
+      },
+      "source": [
+        "Operadores Relacionais\n",
+        "2>3 ###booleano### Veradeiro ou Falos###\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "fc8oe_V40UG2",
+        "outputId": "ad3e0c0d-2177-4529-baac-63b08372a3db"
+      },
+      "source": [
+        "print(2>3) ###booleano ##verdadeiro ou falso##\n",
+        "print (2<3)\n",
+        "print (2==3)  ####  == comparação##\n",
+        "print(2>=3)\n",
+        "print (2<=3)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "False\n",
+            "True\n",
+            "False\n",
+            "False\n",
+            "True\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "dmCM4VDE2L3W"
+      },
+      "source": [
+        "Comparando strings em uma variavel"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "s-o_mubF2Pml",
+        "outputId": "83a68e7e-67c6-45ba-a24a-398fbdf616fa"
+      },
+      "source": [
+        "var1=\"Ola mundo\"\n",
+        "var2=\"Ola mundossss\"\n",
+        "var1==var2 #####== comparação==="
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "False"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 54
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "zi82Jaf12q6t"
+      },
+      "source": [
+        "Perguntando se uma varivel é diferente de != True ! ou = False\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ABcATov_2sLW",
+        "outputId": "2549026c-7077-472e-bebe-f9a42aee9a6c"
+      },
+      "source": [
+        "var1!=var2\n",
+        "\n"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "True"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 58
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "bc-sL_e77MKO"
+      },
+      "source": [
+        "INPUT"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "lYiTE0OT7PwD",
+        "outputId": "39bbae6c-732e-47b8-d33d-c12559070ebc"
+      },
+      "source": [
+        "vaInput=input(\"Digite um numero\")"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Digite um numero10\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "7lslWbp08Tpr"
+      },
+      "source": [
+        "Somando numero o com Input deve se colocar ANTES O **int ou float**"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Mrk0RGTE8cHU",
+        "outputId": "5a3d35e8-ffde-473a-88ca-f0f093371357"
+      },
+      "source": [
+        "var3=float(input(\"Digite um numero\"))\n",
+        "var4=float(input(\"Digite um numero\"))\n",
+        "print(var3+var4)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Digite um numero10\n",
+            "Digite um numero20\n",
+            "30.0\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "N_-QZIsC-Kxm"
+      },
+      "source": [
+        "Conceito de aumentar ou diminuir letras dentro da String\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "YgrZHVms-Kaz",
+        "outputId": "b446c4d1-352d-4b6d-f888-fccd7da32cee"
+      },
+      "source": [
+        "variavel7=\"ALEXANDRE\"\n",
+        "print(variavel7.lower()) #### reduzindo a string\n",
+        "variavel6=\"alexandre\"\n",
+        "print(variavel6.upper()) ### aumentando a string###\n"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "alexandre\n",
+            "ALEXANDRE\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "ZQcL9kdHAerr"
+      },
+      "source": [
+        "Substituindo uma letra da String\n",
+        "variavel8=\"Alexandre\"\n",
+        "print(variavel8.replace(\"A\".\"C\"))"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "wiwPh4bhBTHU",
+        "outputId": "65f520b2-938f-4aaf-f244-ae8cf476d7cd"
+      },
+      "source": [
+        "variavel8=\"Alexandre\"\n",
+        "print(variavel8.replace(\"A\",\"C\"))"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Clexandre\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "1OOHisrCPcQm"
+      },
+      "source": [
+        "Elabore um programa que recebe  o nome  de uma pessoa no terminale mostra  a seguinte mensagem: Olá (nome)!Seja bem vindo ao fantástico mundo da programação."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "3hG_SfyrPX1t",
+        "outputId": "97e0caec-5e55-4a05-fc17-213bbd852063"
+      },
+      "source": [
+        "nome=input(\"Digite o seu nome:\")\n",
+        "print(\"Olá\",nome,\"!Seja bem vindo ao fantástico mundo da programação.\")"
+      ],
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Digite o seu nome:Alexandre\n",
+            "Olá Alexandre !Seja bem vindo ao fantástico mundo da programação.\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "U4l3LaSyU7Na"
+      },
+      "source": [
+        "Elabore um  programa  que recebe dois valores inteiros e mostra a soma  desses valores:"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "zuYxdyPpVG4P",
+        "outputId": "8d949f66-4ad5-4a2c-ca0b-015a0bbe5434"
+      },
+      "source": [
+        "numero1=int(input(\"Digite um numero\"))\n",
+        "numero2=int(input(\"Digite um numero\"))\n",
+        "soma=numero1+numero2\n",
+        "print (\"soma:\",soma)"
+      ],
+      "execution_count": 19,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Digite um numero10\n",
+            "Digite um numero10\n",
+            "soma: 20\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "0DbAVGbObvtz"
+      },
+      "source": [
+        "Elabore um programa que recebe dois valores inteiros e mostra se o primeiro valor é maior ou igual ao segundo valor."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "pux4CCGwbumo",
+        "outputId": "69bf0aed-6d2b-4241-9f66-c5e35bd2d070"
+      },
+      "source": [
+        "numero1=int(input(\"Digite um numero\"))\n",
+        "numero2=int(input(\"Digite um numero\"))\n",
+        "print(numero1>=numero2)\n",
+        "print(numero1<numero2)\n",
+        "print(numero1!=numero2)\n",
+        "print(numero1==numero2)"
+      ],
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Digite um numero20\n",
+            "Digite um numero15\n",
+            "True\n",
+            "False\n",
+            "True\n",
+            "False\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
