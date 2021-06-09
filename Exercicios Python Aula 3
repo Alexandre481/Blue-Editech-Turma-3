@@ -1,0 +1,763 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Aula_02_Codelab_1.ipynb",
+      "provenance": [],
+      "collapsed_sections": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Alexandre481/Blue-Editech-Turma-3/blob/main/Exercicios%20Python%20Aula%203\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "n_igYcmdk6U9"
+      },
+      "source": [
+        "# **Exercícios para treinar:**"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "rRyZR6ZAlEHU"
+      },
+      "source": [
+        "1. **Frase na tela** - Implemente um programa que escreve na tela a frase \"O primeiro programa a gente nunca esquece!\".\n",
+        "\n",
+        "2. **Etiqueta** - Elabore um programa que escreve seu nome completo na primeira linha, seu endereço na segunda e o CEP e telefone na terceira.\n",
+        "\n",
+        "3. **Letra de música** - Faça um programa que mostre na tela uma letra de música que você gosta (proibido letras do Justin Bieber).\n",
+        "\n",
+        "4. **Tabela de notas** - Você foi contratado ou contratada por uma escola pra fazer o sistema de boletim dos alunos. Como primeiro passo, escreva um programa que produza a seguinte saída:\n",
+        "```\n",
+        "ALUNO (A)  NOTA\n",
+        "=========  ====\n",
+        "ALINE      9.0\n",
+        "MÁRIO      DEZ\n",
+        "SÉRGIO     4.5\n",
+        "SHIRLEY    7.0\n",
+        "```\n",
+        "\n",
+        "5. **Menu** - Elabore um programa que mostre o seguinte menu na tela:\n",
+        "```\n",
+        "Cadastro de Clientes\n",
+        "0 - Fim\n",
+        "1 - Inclui\n",
+        "2 - Altera\n",
+        "3 - Exclui\n",
+        "4 - Consulta\n",
+        "Digite uma opção: \n",
+        "```\n",
+        "Ao digitar um valor para a opção, o programa exibe qual opção foi escolhida.\n",
+        "```\n",
+        "Você escolheu a opção '0'.\n",
+        "```\n",
+        "\n",
+        "6. **Calculadora de Dano** - Escreva um programa que receba dois valores digitados pelo usuário:\n",
+        "  - Quantidade de vida de um monstro (entre 10 e 50);\n",
+        "  - Valor do ataque do jogador por turno (entre 5 e 10);\n",
+        "  - Baseado nos valores digitados, exiba a quantidade de turnos que o jogador irá demorar para conseguir derrotar o monstro.\n",
+        "  - ```\n",
+        "    O jogador irá derrotar o monstro em 8 turnos.\n",
+        "    ```"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "HqgnPaCGqMPB"
+      },
+      "source": [
+        "# Exercícios"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "U-ltrv0jqPBq"
+      },
+      "source": [
+        "## #01 - E os 10% do garçom?**\n",
+        "\n",
+        "- Defina uma variável para o valor de uma refeição que custou R$ 42,54;\n",
+        "\n",
+        "- Defina uma variável para o valor da taxa de serviço que é de 10%;\n",
+        "\n",
+        "- Defina uma variável que calcula o valor total da conta e exiba-o no console com essa formatação: R$ XXXX.XX."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "jbcSv4NFkB1C",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "9c843ae1-a828-4a2f-d1a2-5e60c1392b07"
+      },
+      "source": [
+        "import math\n",
+        "var_1=float(42.54)\n",
+        "var_2=float(1.10)\n",
+        "var_3=(round (var_2*var_1%100,2))\n",
+        "print (f\"O valor da Refeição com a taxa de serviço: R$ {var_3}\")"
+      ],
+      "execution_count": 142,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "O valor da Refeição com a taxa de serviço: R$ 46.79\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "JR3-KgsTqR41"
+      },
+      "source": [
+        "## #02 - Qual o valor do troco?\n",
+        "\n",
+        "*   Defina uma variável para o valor de uma compra que custou R$100,98;\n",
+        "\n",
+        "*   Defina uma variável para o valor que o cliente pagou R$150,00;\n",
+        "\n",
+        "*   Defina uma variável que calcula o valor do troco e exiba-o no console com o valor final arredondado."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "hBf3kE_pksAI",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "67fdf063-5253-4f17-be08-9462082ca72c"
+      },
+      "source": [
+        "import math\n",
+        "var_a=float(100.98)\n",
+        "print (f\"Valor da compra:R${var_a}\")\n",
+        "var_b=float(round(150.00,3))\n",
+        "print(f\"Valor  que o cliente pagou: R$ {var_b}\")\n",
+        "var_c=(round(var_b-var_a,2))\n",
+        "print (f\"O cliente recebeu de troco: R$ {var_c}\")"
+      ],
+      "execution_count": 172,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Valor da compra:R$100.98\n",
+            "Valor  que o cliente pagou: R$ 150.0\n",
+            "O cliente recebeu de troco: R$ 49.02\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "2Uu84Uqtkunt"
+      },
+      "source": [
+        "## #03 - Você está na flor da idade?\n",
+        "\n",
+        "*  Defina uma variável para o valor do ano do nascimento;\n",
+        "*  Defina uma variável para o valor do ano atual;\n",
+        "*  Defina uma variável que calcula o valor final da idade da pessoa;\n",
+        "*  Exiba uma mensagem final dizendo a idade da pessoa e a mensagem \"Você está na flor da idade\"."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "kyXxJV3nk14Z",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "1540a2e1-290d-4c92-e736-ae342981d52c"
+      },
+      "source": [
+        "var_V=(input(\"Qual é o seu nome:\"))\n",
+        "var_I=int(input(\"Em que ano nós estamos:\"))\n",
+        "var_J=int(input(\"Qual o ano que você nasceu:\"))\n",
+        "var_L=int(var_I-var_J)\n",
+        "print(f\"Você esta na flor da idade,você tem apenas {var_L} anos. \")"
+      ],
+      "execution_count": 204,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Qual é o seu nome:Silvana\n",
+            "Em que ano nós estamos:1980\n",
+            "Qual o ano que você nasceu:1969\n",
+            "Você esta na flor da idade,você tem apenas 11 anos. \n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "w1T7s2q0p-pt"
+      },
+      "source": [
+        "# Mini projetos"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "meUw7PTwqC-Y"
+      },
+      "source": [
+        "## #01 - Conversor de moedas\n",
+        "\n",
+        "Crie um programa que solicite um um valor em real ao usuário e converta esse valor, para:\n",
+        "\n",
+        "- DOLAR,\n",
+        "- EURO,\n",
+        "- LIBRA ESTERLINA,\n",
+        "- DÓLAR CANADENSE,\n",
+        "- PESO ARGENTINO,\n",
+        "- PESO CHILENO.\n",
+        "\n",
+        "Para esse exercício você precisará realizar uma pesquisa para saber a cotação de cada moeda em real. Mostrar o resultado no formato $ XXXX.XX"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "q481snSClrXe",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "488135de-6766-4673-ddb0-f141c712d08e"
+      },
+      "source": [
+        "import math\n",
+        "r=float(input(\"Digite a quantia em reais:R$ \"))\n",
+        "dolar=float(5.50)\n",
+        "conv=(round(r/dolar,2))\n",
+        "\n",
+        "euro=float(6.00)\n",
+        "conv1=(round(r/euro,2))\n",
+        "\n",
+        "libra=float(8.76)\n",
+        "conv2=(round(r/libra,2))\n",
+        "\n",
+        "dolar_Canadense=float(7.76)\n",
+        "conv3=(round(r/dolar_Canadense,2))\n",
+        "\n",
+        "peso_Argentino=float(1.76)\n",
+        "conv4=(round(r/peso_Argentino,2))\n",
+        "\n",
+        "peso_Chileno=float(7.76)\n",
+        "conv5=(round(r/peso_Chileno,2))\n",
+        "\n",
+        "print(f\"Valor em dolares Americanos: USD {conv}\")\n",
+        "print(f\"Valor em Euro: E {conv1}\")\n",
+        "print(f\"Valor em Libra: £ {conv2}\")\n",
+        "print(f\"Valor em Dolares Canadense: C$ {conv3}\")\n",
+        "print(f\"Valor em Peso Argentino: $ {conv4}\")\n",
+        "print(f\"Valor em Peso Chileno: $ {conv5}\")"
+      ],
+      "execution_count": 216,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Digite a quantia em reais:R$ 50\n",
+            "Valor em dolares Americanos: USD 9.09\n",
+            "Valor em Euro: E 8.33\n",
+            "Valor em Libra: £ 5.71\n",
+            "Valor em Dolares Canadense: C$ 6.44\n",
+            "Valor em Peso Argentino: $ 28.41\n",
+            "Valor em Peso Chileno: $ 6.44\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "KK9PIcJ4qIF9"
+      },
+      "source": [
+        "## #02 - Calculadora de aumento de aluguel\n",
+        "\n",
+        "Vamos construir um programa que irá calcular o aumento anual do seu aluguel em duas partes:\n",
+        "\n",
+        "### Parte 1\n",
+        "A sua calculadora vai receber o `valor do aluguel` e calcular o aumento baseado no `IGPM de 31%`. A calculadora deve apresentar o aluguel reajustado no formato `R$ XXXX.XX`\n",
+        "\n",
+        "**Exemplo:**\n",
+        "```\n",
+        "Valor do aluguel = 1000\n",
+        "Valor do aluguel reajustado = R$ 1310,00"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "VdjHa9Csl0Lg",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "e42cb540-3d57-4acc-a8a2-b0848f37da13"
+      },
+      "source": [
+        "import math\n",
+        "aluguel=float(input(\"Digite o valor do Alugue: R$ \"))\n",
+        "igpm=float(131)\n",
+        "calc=(round(igpm*aluguel/100,2))\n",
+        "print (f\"O valor do seu aluguel reajustado é:R$ {calc:.2f}\")"
+      ],
+      "execution_count": 247,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Digite o valor do Alugue: R$ 1000.00\n",
+            "O valor do seu aluguel reajustado é:R$ 1310.00\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "lKTwnuNMl8rP"
+      },
+      "source": [
+        "### Parte 2\n",
+        "Agora, altere sua calculadora para receber além do `valor do aluguel`, o percentual do reajuste no formato `XX%`.  \n",
+        "\n",
+        "**Dica:** Descubra uma forma de transformar o percentual recebido em um número para efetuar o cálculo.\n",
+        "\n",
+        "**Exemplo:**\n",
+        "```\n",
+        "Valor do aluguel = 1000\n",
+        "Percentual do reajuste = 31%\n",
+        "Valor do aluguel reajustado = R% 1310,00\n",
+        "```"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "xulXXwaA8bDj"
+      },
+      "source": [
+        ""
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "sk38kP1r8b-h"
+      },
+      "source": [
+        "1. **Frase na tela** - Implemente um programa que escreve na tela a frase \"O primeiro programa a gente nunca esquece!\".\n",
+        "\n",
+        "2. **Etiqueta** - Elabore um programa que escreve seu nome completo na primeira linha, seu endereço na segunda e o CEP e telefone na terceira.\n",
+        "\n",
+        "3. **Letra de música** - Faça um programa que mostre na tela uma letra de música que você gosta (proibido letras do Justin Bieber).\n",
+        "\n",
+        "4. **Tabela de notas** - Você foi contratado ou contratada por uma escola pra fazer o sistema de boletim dos alunos. Como primeiro passo, escreva um programa que produza a seguinte saída:\n",
+        "```\n",
+        "ALUNO (A)  NOTA\n",
+        "=========  ====\n",
+        "ALINE      9.0\n",
+        "MÁRIO      DEZ\n",
+        "SÉRGIO     4.5\n",
+        "SHIRLEY    7.0\n",
+        "```\n",
+        "\n",
+        "5. **Menu** - Elabore um programa que mostre o seguinte menu na tela:\n",
+        "```\n",
+        "Cadastro de Clientes\n",
+        "0 - Fim\n",
+        "1 - Inclui\n",
+        "2 - Altera\n",
+        "3 - Exclui\n",
+        "4 - Consulta\n",
+        "Digite uma opção: \n",
+        "```\n",
+        "Ao digitar um valor para a opção, o programa exibe qual opção foi escolhida.\n",
+        "```\n",
+        "Você escolheu a opção '0'.\n",
+        "```\n",
+        "\n",
+        "6. **Calculadora de Dano** - Escreva um programa que receba dois valores digitados pelo usuário:\n",
+        "  - Quantidade de vida de um monstro (entre 10 e 50);\n",
+        "  - Valor do ataque do jogador por turno (entre 5 e 10);\n",
+        "  - Baseado nos valores digitados, exiba a quantidade de turnos que o jogador irá demorar para conseguir derrotar o monstro.\n",
+        "  - ```\n",
+        "    O jogador irá derrotar o monstro em 8 turnos.\n",
+        "    ```"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "DVG_ve_Z8hS8"
+      },
+      "source": [
+        "1Frase na tela - Implemente um programa que escreve na tela a frase \"O primeiro programa a gente nunca esquece!\"."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "aw2Zk_9KmA85",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "47f2b44d-5abb-413d-e4d9-00fb1dea9e87"
+      },
+      "source": [
+        "print( \"O primeiro programa a gente nunca esquece!\")"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "O primeiro programa a gente nunca esquece!\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "EEm-4OOw8w8M"
+      },
+      "source": [
+        ""
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "VvYTKxcS9GNc"
+      },
+      "source": [
+        "2Etiqueta - Elabore um programa que escreve seu nome completo na primeira linha, seu endereço na segunda e o CEP e telefone na terceira."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "NK2ZRPmV9MRe",
+        "outputId": "20d5d84d-c365-48f4-c230-8d3965c40d42"
+      },
+      "source": [
+        "print(\"Nome completo: Alexandre Carlos Gonzaga.\\nAv Dr. Epitácio Pessoa,656\\ncep01326010\")"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Nome completo: Alexandre Carlos Gonzaga.\n",
+            "Av Dr. Epitácio Pessoa,656\n",
+            "cep01326010\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "WyFtQeFF-8UT"
+      },
+      "source": [
+        "# 3 Letra de música - Faça um programa que mostre na tela uma letra de música que você gosta (proibido letras do Justin Bieber)."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "v18mCud2_K9s",
+        "outputId": "1db83660-fb8c-45da-cada-dd6093e7d8c1"
+      },
+      "source": [
+        "print (\"Minha Musica é: Anjos Trabalhando. \\n Grupo: Rush\" )"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Minha Musica é: Anjos Trabalhando. \n",
+            " Grupo: Rush\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "uTi621SnAuTM",
+        "outputId": "540eef14-28a4-492b-ccdc-17b48ed950fc"
+      },
+      "source": [
+        "print ('Dirigindo para o leste, e para o passado a,\\n'\n",
+        " ' história retrocede em meu espelho retrovisor \\n '\n",
+        " ' Levada por uma onda de música por uma estrada deserta A \\n'\n",
+        "  'memória zumbindo no coração de uma cidade industrial \\n \\n '\n",
+        "\n",
+        "  'Toda minha vida \\n '\n",
+        "  'eu tenho trabalhado com os anjos horas extras \\n'\n",
+        "  'Andando, dirigindo e vivendo \\n'\n",
+        " ' Tão perto do limite \\n'\n",
+        "' Trabalhando com os anjos - horas extras \\n \\n'\n",
+        "\n",
+        "  'Cavalgando pelo Alcance da Luz para a cidade ferida \\n'\n",
+        "  'Enchendo meu espírito com o desejo mais selvagem de voar \\n'\n",
+        "  'Tomando a estrada principal para a cidade ferida A \\n'\n",
+        "  'memória dedilhando no coração de uma imagem em movimento \\n \\n'\n",
+        "\n",
+        "  'Todo esse tempo \\n'\n",
+        "  'eu tenho trabalhado com os anjos horas extras \\n'\n",
+        "  'Cavalgando, dirigindo e voando \\n'\n",
+        "  'Bem além da borda \\n'\n",
+        "  'Trabalhando com os anjos - horas extras \\n \\n'\n",
+        "\n",
+        "  'Dirigindo no fio da navalha entre o passado e o futuro \\n'\n",
+        "  'Aumente a música e sorria \\n'\n",
+        "  'Deixe-se levar pelas canções e histórias de tempos \\n'\n",
+        "  'perdidos Memória batendo no coração de um inverno inglês \\n'\n",
+        "  'Memórias batendo no coração de uma aldeia africana')"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Dirigindo para o leste, e para o passado a,\n",
+            " história retrocede em meu espelho retrovisor \n",
+            "  Levada por uma onda de música por uma estrada deserta A \n",
+            "memória zumbindo no coração de uma cidade industrial \n",
+            " \n",
+            " Toda minha vida \n",
+            " eu tenho trabalhado com os anjos horas extras \n",
+            "Andando, dirigindo e vivendo \n",
+            " Tão perto do limite \n",
+            " Trabalhando com os anjos - horas extras \n",
+            " \n",
+            "Cavalgando pelo Alcance da Luz para a cidade ferida \n",
+            "Enchendo meu espírito com o desejo mais selvagem de voar \n",
+            "Tomando a estrada principal para a cidade ferida A \n",
+            "memória dedilhando no coração de uma imagem em movimento \n",
+            " \n",
+            "Todo esse tempo \n",
+            "eu tenho trabalhado com os anjos horas extras \n",
+            "Cavalgando, dirigindo e voando \n",
+            "Bem além da borda \n",
+            "Trabalhando com os anjos - horas extras \n",
+            " \n",
+            "Dirigindo no fio da navalha entre o passado e o futuro \n",
+            "Aumente a música e sorria \n",
+            "Deixe-se levar pelas canções e histórias de tempos \n",
+            "perdidos Memória batendo no coração de um inverno inglês \n",
+            "Memórias batendo no coração de uma aldeia africana\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "N_cNtOzzD4Ut"
+      },
+      "source": [
+        "4 Tabela de notas - Você foi contratado ou contratada por uma escola pra fazer o sistema de boletim dos alunos. Como primeiro passo, escreva um programa que produza a seguinte saída:\n",
+        "ALUNO (A)  NOTA\n",
+        "=========  ====\n",
+        "ALINE      9.0\n",
+        "MÁRIO      DEZ\n",
+        "SÉRGIO     4.5\n",
+        "SHIRLEY    7.0"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "FU9AYDxjEiOa",
+        "outputId": "3019c1e3-8c3f-46ed-b96f-8a74f9022e03"
+      },
+      "source": [
+        "print(\"ALINE nota:9.0 \\nMario nota: DEZ \\nSÉRGIO nota: 4.5 \\nSHIRLEY nota: 7.0\")"
+      ],
+      "execution_count": 53,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "ALINE nota:9.0 \n",
+            "Mario nota: DEZ \n",
+            "SÉRGIO nota: 4.5 \n",
+            "SHIRLEY nota: 7.0\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "EOCl928tFMi5"
+      },
+      "source": [
+        "4-Menu - Elabore um programa que mostre o seguinte menu na tela:\n",
+        "\n",
+        "Cadastro de Clientes\n",
+        "0 - Fim\n",
+        "1 - Inclui\n",
+        "2 - Altera\n",
+        "3 - Exclui\n",
+        "4 - Consulta\n",
+        "Digite uma opção: \n",
+        "# Ao digitar um valor para a opção, o programa exibe qual opção foi escolhida."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "1oJAq10QHwsZ",
+        "outputId": "6bf9f6c7-facf-451b-c06e-3e88390bd616"
+      },
+      "source": [
+        "var_0=print(\"0 para Fim\")\n",
+        "var_1=print(\"1 para Incluir\")\n",
+        "var_2=print(\"2 para Alterar\")\n",
+        "var_3=print(\"3 para Excluir\")\n",
+        "opcao=(input(\"Escolha uma opção acima:\"))\n",
+        "print (f\"Você escolheu a opção: {opcao}\")\n",
+        "\n",
+        "\n",
+        "\n"
+      ],
+      "execution_count": 52,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "0 para Fim\n",
+            "1 para Incluir\n",
+            "2 para Alterar\n",
+            "3 para Excluir\n",
+            "Escolha uma opção acima:0\n",
+            "Você escolheu a opção: 0\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "UoBVdkBXPti-"
+      },
+      "source": [
+        "6 Calculadora de Dano - Escreva um programa que receba dois valores digitados pelo usuário:\n",
+        "\n",
+        "Quantidade de vida de um monstro (entre 10 e 50);\n",
+        "Valor do ataque do jogador por turno (entre 5 e 10);\n",
+        "Baseado nos valores digitados, exiba a quantidade de turnos que o jogador irá demorar para conseguir derrotar o monstro.\n",
+        "O jogador irá derrotar o monstro em 8 turnos."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "PxpZNnhMPyRW",
+        "outputId": "2956231a-8d91-40db-f5d1-254cb39f2f35"
+      },
+      "source": [
+        "from math import ceil\n",
+        "vida_monstro=int(input(\"Digite o numero 40 que é a vida de um monstro:\"))\n",
+        "valor_ataque=int(input(\"Digite o numero ataque por turno 5 :\"))\n",
+        "quantidade_turno=ceil(vida_monstro / valor_ataque)\n",
+        "print(f\"O jogador ira derrotar o monstro em {quantidade_turno} turnos.\")\n"
+      ],
+      "execution_count": 245,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Digite o numero 40 que é a vida de um monstro:37\n",
+            "Digite o numero ataque por turno 5 :11\n",
+            "O jogador ira derrotar o monstro em 4 turnos.\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "4q4y-edYCHGQ"
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
