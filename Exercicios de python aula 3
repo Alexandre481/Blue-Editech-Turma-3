@@ -122,7 +122,7 @@
         "var_3=(round (var_2*var_1%100,2))\n",
         "print (f\"O valor da Refeição com a taxa de serviço: R$ {var_3}\")"
       ],
-      "execution_count": 142,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -166,7 +166,7 @@
         "var_c=(round(var_b-var_a,2))\n",
         "print (f\"O cliente recebeu de troco: R$ {var_c}\")"
       ],
-      "execution_count": 172,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -209,7 +209,7 @@
         "var_L=int(var_I-var_J)\n",
         "print(f\"Você esta na flor da idade,você tem apenas {var_L} anos. \")"
       ],
-      "execution_count": 204,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -289,7 +289,7 @@
         "print(f\"Valor em Peso Argentino: $ {conv4}\")\n",
         "print(f\"Valor em Peso Chileno: $ {conv5}\")"
       ],
-      "execution_count": 216,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -341,7 +341,7 @@
         "calc=(round(igpm*aluguel/100,2))\n",
         "print (f\"O valor do seu aluguel reajustado é:R$ {calc:.2f}\")"
       ],
-      "execution_count": 247,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -370,6 +370,37 @@
         "Percentual do reajuste = 31%\n",
         "Valor do aluguel reajustado = R% 1310,00\n",
         "```"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "LKlcujEjbmtK",
+        "outputId": "7afef451-a528-4b64-febd-1c149ad94124"
+      },
+      "source": [
+        "aluguel=float(input('Digite o valor do aluguel:R$ '))\n",
+        "igpm=(input(\"Qual valor da taxa do reajuste-IGPM:(xx%)?: \"))\n",
+        "porcent=float(igpm.replace('%',''))\n",
+        "calc=float(aluguel*(porcent/100))+aluguel\n",
+        "print(f'O valor do aluguel é: R$ {aluguel:.2f}\\nO valor com reajuste:R$ {calc:.2f}\\nO percentual de reajuste: {porcent:.0f}% ')"
+      ],
+      "execution_count": 25,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Digite o valor do aluguel:R$ 1000.00\n",
+            "Qual valor da taxa do reajuste-IGPM:(xx%)?: 31%\n",
+            "O valor do aluguel é: R$ 1000.00\n",
+            "O valor com reajuste:R$ 1310.00\n",
+            "O percentual de reajuste: 31% \n"
+          ],
+          "name": "stdout"
+        }
       ]
     },
     {
@@ -542,69 +573,69 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "uTi621SnAuTM",
-        "outputId": "540eef14-28a4-492b-ccdc-17b48ed950fc"
+        "outputId": "8c7efae5-215f-4558-868a-93bf3d4efcc5"
       },
       "source": [
-        "print ('Dirigindo para o leste, e para o passado a,\\n'\n",
-        " ' história retrocede em meu espelho retrovisor \\n '\n",
-        " ' Levada por uma onda de música por uma estrada deserta A \\n'\n",
-        "  'memória zumbindo no coração de uma cidade industrial \\n \\n '\n",
+        "print ('''Dirigindo para o leste, e para o passado a,\n",
+        "  história retrocede em meu espelho retrovisor \n",
+        "  Levada por uma onda de música por uma estrada deserta A \n",
+        "  memória zumbindo no coração de uma cidade industrial \n",
         "\n",
-        "  'Toda minha vida \\n '\n",
-        "  'eu tenho trabalhado com os anjos horas extras \\n'\n",
-        "  'Andando, dirigindo e vivendo \\n'\n",
-        " ' Tão perto do limite \\n'\n",
-        "' Trabalhando com os anjos - horas extras \\n \\n'\n",
+        "  Toda minha vida \n",
+        "  eu tenho trabalhado com os anjos horas extras \n",
+        "  Andando, dirigindo e vivendo \n",
+        "  Tão perto do limite\n",
+        "  Trabalhando com os anjos - horas extras \n",
         "\n",
-        "  'Cavalgando pelo Alcance da Luz para a cidade ferida \\n'\n",
-        "  'Enchendo meu espírito com o desejo mais selvagem de voar \\n'\n",
-        "  'Tomando a estrada principal para a cidade ferida A \\n'\n",
-        "  'memória dedilhando no coração de uma imagem em movimento \\n \\n'\n",
+        "   Cavalgando pelo Alcance da Luz para a cidade ferida \n",
+        "   Enchendo meu espírito com o desejo mais selvagem de voar \n",
+        "   Tomando a estrada principal para a cidade ferida A \n",
+        "   memória dedilhando no coração de uma imagem em movimento \n",
         "\n",
-        "  'Todo esse tempo \\n'\n",
-        "  'eu tenho trabalhado com os anjos horas extras \\n'\n",
-        "  'Cavalgando, dirigindo e voando \\n'\n",
-        "  'Bem além da borda \\n'\n",
-        "  'Trabalhando com os anjos - horas extras \\n \\n'\n",
+        "   Todo esse tempo \n",
+        "   eu tenho trabalhado com os anjos horas extras \n",
+        "   Cavalgando, dirigindo e voando \n",
+        "   Bem além da borda \n",
+        "   Trabalhando com os anjos - horas extras \n",
         "\n",
-        "  'Dirigindo no fio da navalha entre o passado e o futuro \\n'\n",
-        "  'Aumente a música e sorria \\n'\n",
-        "  'Deixe-se levar pelas canções e histórias de tempos \\n'\n",
-        "  'perdidos Memória batendo no coração de um inverno inglês \\n'\n",
-        "  'Memórias batendo no coração de uma aldeia africana')"
+        "   Dirigindo no fio da navalha entre o passado e o futuro \n",
+        "   Aumente a música e sorria \n",
+        "   Deixe-se levar pelas canções e histórias de tempos \n",
+        "   perdidos Memória batendo no coração de um inverno inglês  \n",
+        "   Memórias batendo no coração de uma aldeia africana''')"
       ],
-      "execution_count": null,
+      "execution_count": 28,
       "outputs": [
         {
           "output_type": "stream",
           "text": [
             "Dirigindo para o leste, e para o passado a,\n",
-            " história retrocede em meu espelho retrovisor \n",
+            "  história retrocede em meu espelho retrovisor \n",
             "  Levada por uma onda de música por uma estrada deserta A \n",
-            "memória zumbindo no coração de uma cidade industrial \n",
-            " \n",
-            " Toda minha vida \n",
-            " eu tenho trabalhado com os anjos horas extras \n",
-            "Andando, dirigindo e vivendo \n",
-            " Tão perto do limite \n",
-            " Trabalhando com os anjos - horas extras \n",
-            " \n",
-            "Cavalgando pelo Alcance da Luz para a cidade ferida \n",
-            "Enchendo meu espírito com o desejo mais selvagem de voar \n",
-            "Tomando a estrada principal para a cidade ferida A \n",
-            "memória dedilhando no coração de uma imagem em movimento \n",
-            " \n",
-            "Todo esse tempo \n",
-            "eu tenho trabalhado com os anjos horas extras \n",
-            "Cavalgando, dirigindo e voando \n",
-            "Bem além da borda \n",
-            "Trabalhando com os anjos - horas extras \n",
-            " \n",
-            "Dirigindo no fio da navalha entre o passado e o futuro \n",
-            "Aumente a música e sorria \n",
-            "Deixe-se levar pelas canções e histórias de tempos \n",
-            "perdidos Memória batendo no coração de um inverno inglês \n",
-            "Memórias batendo no coração de uma aldeia africana\n"
+            "  memória zumbindo no coração de uma cidade industrial \n",
+            "\n",
+            "  Toda minha vida \n",
+            "  eu tenho trabalhado com os anjos horas extras \n",
+            "  Andando, dirigindo e vivendo \n",
+            "  Tão perto do limite\n",
+            "  Trabalhando com os anjos - horas extras \n",
+            "\n",
+            "   Cavalgando pelo Alcance da Luz para a cidade ferida \n",
+            "   Enchendo meu espírito com o desejo mais selvagem de voar \n",
+            "   Tomando a estrada principal para a cidade ferida A \n",
+            "   memória dedilhando no coração de uma imagem em movimento \n",
+            "\n",
+            "   Todo esse tempo \n",
+            "   eu tenho trabalhado com os anjos horas extras \n",
+            "   Cavalgando, dirigindo e voando \n",
+            "   Bem além da borda \n",
+            "   Trabalhando com os anjos - horas extras \n",
+            "\n",
+            "   Dirigindo no fio da navalha entre o passado e o futuro \n",
+            "   Aumente a música e sorria \n",
+            "   Deixe-se levar pelas canções e histórias de tempos \n",
+            "   perdidos Memória batendo no coração de um inverno inglês  \n",
+            "   Memórias batendo no coração de uma aldeia africana\n"
           ],
           "name": "stdout"
         }
@@ -637,7 +668,7 @@
       "source": [
         "print(\"ALINE nota:9.0 \\nMario nota: DEZ \\nSÉRGIO nota: 4.5 \\nSHIRLEY nota: 7.0\")"
       ],
-      "execution_count": 53,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -689,7 +720,7 @@
         "\n",
         "\n"
       ],
-      "execution_count": 52,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -735,7 +766,7 @@
         "quantidade_turno=ceil(vida_monstro / valor_ataque)\n",
         "print(f\"O jogador ira derrotar o monstro em {quantidade_turno} turnos.\")\n"
       ],
-      "execution_count": 245,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
