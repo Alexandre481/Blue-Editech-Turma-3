@@ -1,7 +1,4 @@
-{https://github.com/Alexandre481/Blue-Editech-Turma-3-C6.git
-      "cell_type": "markdown",
-      "metadata": {
-        "id": "ksvbOd2t18Sl"
+
       },
       "source": [
         "###                        Projeto 01 – Detetive\n",
@@ -81,11 +78,3 @@
             "Você devia para a vítima?  não\n",
             "Você já trabalhou com a vítima?   sim\n",
             "Esta pessoa é considerada suspeita.\n",
-            "\n"
-          ],
-          "name": "stdout"
-        }
-      ]
-    }
-  ]
-}

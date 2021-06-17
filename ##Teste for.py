@@ -1,10 +1,10 @@
 ##Teste for
 frase=input("Digite uma frase:").lower()
-vogais=0
+vogais=""
 
-for letra in frase:
-    print(letra,end=' ')
-    if letra in 'aeiou':
-     vogais +=1
+for  letra in frase:
+    
+    if not letra in 'aeiou':
+     vogais +=letra
 print(f' A frase:{frase}, possui {vogais} vogais')
     
