@@ -23,7 +23,7 @@ numero_voto = 0
 eleito = ''
 
 def autoriza_voto(ano):
-    from datetime import date
+    from datetime import date       
     ano_atual = date.today().year
     idade = ano_atual - ano
     if idade < 16:
@@ -32,7 +32,7 @@ def autoriza_voto(ano):
         return 'Opcional'
     else:
         return 'Obrigatório'
-           
+
 
 votacao_dict = {'candidato1':list(),
                 'candidato2':list(),
@@ -43,10 +43,11 @@ votacao_dict = {'candidato1':list(),
                 'voto_nulo':list(),
                 'voto_em_branco':list()
                 }
+
 def votacao(autoriza_voto , voto):
     from datetime import date
     ano_atual = date.today().year
-    if autoriza_voto == 'Obrigatório' or 'Opcional':
+    if autoriza_voto == 'Obrigatório' or autoriza_voto == 'Opcional':
         if voto == 1 or voto == '1':
             votacao_dict['candidato1'].append(1)
             return 'Você votou.'
@@ -79,6 +80,8 @@ def votacao(autoriza_voto , voto):
         elif sum(votacao_dict['candidato3']) / total_votos_validos > sum(votacao_dict['candidato1']) / total_votos_validos and sum(votacao_dict['candidato3']) / total_votos_validos > sum(votacao_dict['candidato2']) / total_votos_validos:      
             eleito = votacao_dict['candidato3_nome']
             numero_votos = sum(votacao_dict['candidato3'])
+        
+
         return f'''
         Resultado da eleição do ano {ano_atual}
         {votacao_dict['candidato1_nome']}: {sum(votacao_dict['candidato1'])}
@@ -90,32 +93,31 @@ def votacao(autoriza_voto , voto):
         Total de votos inválidos: {total_votos_invalidos}
         O candidato eleito: {eleito} com {numero_votos} votos.
         '''
-
-
+        
 # Programa principal
 print(f'''
-          Bem vindo ao sistema de votação
-          Os candidatos disponiveis são:
-          [1] {votacao_dict['candidato1_nome']} 
-          [2] {votacao_dict['candidato2_nome']}
-          [3] {votacao_dict['candidato3_nome']}
+            Bem vindo ao sistema de votação
+            Os candidatos disponiveis são:
+            [1] {votacao_dict['candidato1_nome']} 
+            [2] {votacao_dict['candidato2_nome']}
+            [3] {votacao_dict['candidato3_nome']}
 ''')
 altera_nome = input('Deseja mudar os nomes dos candidatos? [S/N] ').strip().upper()[0]
 while altera_nome not in ['S','N']:
     altera_nome = input('Não entendi. Deseja mudar os nomes dos candidatos? [S/N] ').strip().upper()[0]
-if altera_nome == 'S':
-    votacao_dict['candidato1_nome'] = input('Informe o nome do candidato 1: ').strip().capitalize()
-    votacao_dict['candidato2_nome'] = input('Informe o nome do candidato 2: ').strip().capitalize()
-    votacao_dict['candidato3_nome'] = input('Informe o nome do candidato 3: ').strip().capitalize()
+    if altera_nome == 'S':
+        votacao_dict['candidato1_nome'] = input('Informe o nome do candidato 1: ').strip().capitalize()
+        votacao_dict['candidato2_nome'] = input('Informe o nome do candidato 2: ').strip().capitalize()
+        votacao_dict['candidato3_nome'] = input('Informe o nome do candidato 3: ').strip().capitalize()
 print("Sistema está pronto para votação.")
 check_valor = True
 while check_valor == True:
     print(f''' 
-       [1] {votacao_dict['candidato1_nome']} 
-       [2] {votacao_dict['candidato2_nome']}
-       [3] {votacao_dict['candidato3_nome']} 
-       [4] Voto Nulo
-       [5] Voto em Branco
+    [1] {votacao_dict['candidato1_nome']} 
+    [2] {votacao_dict['candidato2_nome']}
+    [3] {votacao_dict['candidato3_nome']} 
+    [4] Voto Nulo
+    [5] Voto em Branco
     ''')
     ano_nasc = int(input('Digite seu ano de nascimento: '))
     autorizacao = autoriza_voto(ano_nasc)
@@ -127,8 +129,7 @@ while check_valor == True:
         check = input('Deseja fechar a votação? [S/N] ').strip().upper()[0]
     if check == 'S':
         check_valor = False
-    # else:
-    #     continue
+
 print(votacao('mostrar',0))     
 
 
