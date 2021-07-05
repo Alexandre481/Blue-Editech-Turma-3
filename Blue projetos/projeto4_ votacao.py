@@ -21,7 +21,7 @@
 # ● Qual candidato venceu a votação.
 numero_voto = 0
 eleito = ''
-
+## Função para definir quem esta em condições de votar
 def autoriza_voto(ano):
     from datetime import date       
     ano_atual = date.today().year
@@ -33,7 +33,7 @@ def autoriza_voto(ano):
     else:
         return 'Obrigatório'
 
-
+# Lista de candidatos
 votacao_dict = {'candidato1':list(),
                 'candidato2':list(),
                 'candidato3':list(),
@@ -43,7 +43,7 @@ votacao_dict = {'candidato1':list(),
                 'voto_nulo':list(),
                 'voto_em_branco':list()
                 }
-
+#Função para contabilizar votos
 def votacao(autoriza_voto , voto):
     from datetime import date
     ano_atual = date.today().year
@@ -68,6 +68,9 @@ def votacao(autoriza_voto , voto):
             return ' Você votou nulo'
     elif autoriza_voto == 'Negado':
         return 'Você não tem idade para votar.'  
+        
+        ## Contagem de votos
+
     elif autoriza_voto == 'mostrar' and voto == 0:
         total_votos_validos = sum(votacao_dict['candidato1']) + sum(votacao_dict['candidato2']) + sum(votacao_dict['candidato3'])
         total_votos_invalidos = sum(votacao_dict['voto_nulo']) + sum(votacao_dict['voto_em_branco'])
@@ -102,10 +105,10 @@ print(f'''
             [2] {votacao_dict['candidato2_nome']}
             [3] {votacao_dict['candidato3_nome']}
 ''')
-altera_nome = input('Deseja mudar os nomes dos candidatos? [S/N] ').strip().upper()[0]
+altera_nome = input('Deseja mudar os nomes dos candidatos? [S/N]: ').strip().upper()[0]
 while altera_nome not in ['S','N']:
     altera_nome = input('Não entendi. Deseja mudar os nomes dos candidatos? [S/N] ').strip().upper()[0]
-    if altera_nome == 'S':
+if altera_nome == 'S':
         votacao_dict['candidato1_nome'] = input('Informe o nome do candidato 1: ').strip().capitalize()
         votacao_dict['candidato2_nome'] = input('Informe o nome do candidato 2: ').strip().capitalize()
         votacao_dict['candidato3_nome'] = input('Informe o nome do candidato 3: ').strip().capitalize()
@@ -121,10 +124,10 @@ while check_valor == True:
     ''')
     ano_nasc = int(input('Digite seu ano de nascimento: '))
     autorizacao = autoriza_voto(ano_nasc)
-    numero_candidato = int(input('Informe o numero do seu candidato'))
+    numero_candidato = int(input('Informe o numero do seu candidato: '))
     processo_voto = votacao(autorizacao, numero_candidato)
     print(processo_voto)
-    check = input('Deseja fechar a votação? [S/N] ').strip().upper()[0]
+    check = input('Deseja fechar a votação? [S/N]: ').strip().upper()[0]
     while check not in ['S','N']:
         check = input('Deseja fechar a votação? [S/N] ').strip().upper()[0]
     if check == 'S':

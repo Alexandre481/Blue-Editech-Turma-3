@@ -30,8 +30,8 @@
 import pygame
 import os
 pygame.init()
-if os.path.exists('David Bowie - Starman-192k.mp3'):
-  pygame.mixer.music.load('David Bowie - Starman-192k.mp3')
+if os.path.exists('Interstellar Soundtrack by  Hans Zimmer (320  kbps).mp3'):
+  pygame.mixer.music.load('Interstellar Soundtrack by  Hans Zimmer (320  kbps).mp3')
   pygame.mixer.music.play()
   pygame.mixer.music.set_volume(1)
 
