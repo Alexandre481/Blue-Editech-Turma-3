@@ -140,4 +140,4 @@ print(votacao('mostrar',0))
 
 
 
-
+-------
